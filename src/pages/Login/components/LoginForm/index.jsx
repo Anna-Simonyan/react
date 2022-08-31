@@ -14,7 +14,6 @@ const LoginForm= () =>
     initialValues={{ email: "", password: "" ,name :"",surName:"",phoneNamber:"", reEnterPassword: ""}}
     onSubmit={(values, { setSubmitting }) => {
       setTimeout(() => {
-        console.log("Logging in", values);
         setSubmitting(false);
       }, 500);
     }}

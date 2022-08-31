@@ -13,9 +13,6 @@ export const useLenght = () => {
  const toCount = () => {
      if(items.length !== 0 ){
        setleng(items.reduce((agr, e) => {
-             console.log(agr)
-             console.log(e)
-            //  return agr.length = agr.length + e.length
              return (e.length + e.count) + agr
          }, 0))
      } else {

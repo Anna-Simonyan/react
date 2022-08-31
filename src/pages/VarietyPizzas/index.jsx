@@ -21,7 +21,7 @@ const VarietyPizzas = ({ id, picture, name, price }) => {
     const toggleItem = (product = null) => {
       setData(product);
       setVisible(product !== null);
-      console.log(product)
+     
     };
 
     const plus =(data)=>{

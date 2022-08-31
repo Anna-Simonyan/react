@@ -50,7 +50,7 @@ const ProductPizzaModal = ({ data, closeModal, plus ,minus}) => {
   const toggleItem = (product = null) => {
     setData(product);
     setVisible(product !== null);
-    console.log(data)
+    
   };
 
   

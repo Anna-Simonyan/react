@@ -9,7 +9,7 @@ const SideBar = () => {
   
   const click = () => {
     setOpen(!isOpen);
-    console.log(isOpen);
+    
   };
 
 

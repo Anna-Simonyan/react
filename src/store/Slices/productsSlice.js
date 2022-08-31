@@ -43,7 +43,6 @@ export const cartSlice = createSlice({
 
      
       decrement(state, action) {
-        console.log(action.payload)
         state.products = state.products.map(e => {
             if(action.payload.id === e.id) {
                 return {...e, count: e.count - 1}

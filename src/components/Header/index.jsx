@@ -39,7 +39,7 @@ const Header = () => {
  
   const click = () => {
     setOpen(!isOpen);
-    console.log(isOpen);
+    
   };
   
 

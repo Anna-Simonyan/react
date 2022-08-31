@@ -15,7 +15,6 @@ export const useTotal = () => {
     const toCount = () => {
         if(items.length !== 0 ){
             setTotal(items.reduce((agr, e) => {
-                console.log(agr)
                 return (e.price * e.count) + agr
             }, 0))
         } else {
