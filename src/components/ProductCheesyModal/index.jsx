@@ -1,6 +1,5 @@
-import React,{ useState} from 'react'
-import { resetCart ,increament,decrement} from '../../store/Slices/productsSlice'
-import { useTotal } from '../../hooks/useTotal'
+import React from 'react'
+import { increament} from '../../store/Slices/productsSlice'
 import { useDispatch,useSelector } from 'react-redux'
 import close from '../../assets/Images/close.svg'
 import styles from './ProductCheesyModal.module.css'
@@ -8,30 +7,17 @@ import pasketPlus from '../../assets/Images/basketPlus.svg'
 import { addToCart } from '../../store/Slices/productsSlice'
 import Share from '../Share'
 import { NavLink } from 'react-router-dom'
-import pizza from '../../assets/Images/pizza.jpg'
 import { Carousel} from 'react-responsive-carousel'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-const ProductCheesyModal = ({ data, closeModal }) => {
+const ProductCheesyModal = ({ data, closeModal,plus,minus }) => {
     
-    const total = useTotal()
   const dispatch = useDispatch();
-  const darkMode = useSelector((state) => state.theme.darkMode);
   const items = useSelector((state) => state.cart.products);
-  const [isCollapsed, setIsCollapsed] = useState(false);
   const products = useSelector((state) => state.cart.products);
  
 
-  const resetHandler = (e) => {
-    
-    dispatch(resetCart());
-    setIsCollapsed(false);
-   
-  };
-  const isCollapsedHandler = (e) => {
-    
-    setIsCollapsed((prev) => !prev);
-  };
+ 
   const addToCartHandler = (item) => {
     const res = items.some(e => e.id === item.id)
     if(res) {
@@ -41,21 +27,7 @@ const ProductCheesyModal = ({ data, closeModal }) => {
     }
 };
 
-const settings = {
-  customPaging: function(i) {
-    return (
-      <a>
-        <img src={pizza.i + 1} alt="" />
-      </a>
-    );
-  },
-  dots: true,
-  dotsClass: "slick-dots slick-thumb",
-  infinite: true,
-  speed: 500,
-  slidesToShow: 1,
-  slidesToScroll: 1
-};
+
 
   return (
     <div>
@@ -161,14 +133,14 @@ const settings = {
           <div style={{display:'flex',}}>
         <div className={styles.decrementDiv}>  <span  onClick={() => {
                       if(data.count > 1) {
-                        dispatch(decrement());
+                       minus(data)
                       }
                   }}  ><span style={{background:' transparent',
                     
                     fontSize:'22px',marginLeft:'1rem',
                     cursor: 'pointer',color:'#E33B41'}}>-</span></span>
                     <span style={{fontSize:'14px',color:'red'}}>{data.count}</span><span  onClick={() => {
-                    dispatch(increament());
+                  plus(data)
                   }}><span style={{background:' transparent',
                     
                   fontSize:'22px',
@@ -195,7 +167,7 @@ const settings = {
             <div className={styles.catalogContainer}>
          
                 <div className={styles.catalogContainerChald}>
-              <div onClick={isCollapsedHandler}>
+              <div >
         <img src={data.picture1} alt="" />
         </div> 
         <p style={{lineHeight:'30px'}}>{data.name1}</p> 

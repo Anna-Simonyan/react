@@ -1,19 +1,18 @@
-import React,{ useState} from 'react'
+import React from 'react'
 import { useDispatch,useSelector } from 'react-redux'
 import pasketPlus from '../../assets/Images/basketPlus.svg'
 import { addToCart } from '../../store/Slices/productsSlice'
-import { increament,resetCart , } from '../../store/Slices/productsSlice'
+import { increament,} from '../../store/Slices/productsSlice'
 import styles from './ProductMinModal.module.css'
-import { useTotal } from '../../hooks/useTotal'
 import close from '../../assets/Images/close.svg'
 import Share from '../Share'
 const ProductMinModal = ({ data, closeModal,plus,minus }) => {
-  const total = useTotal()
+  
   const dispatch = useDispatch();
-  const darkMode = useSelector((state) => state.theme.darkMode);
+  
   const items = useSelector((state) => state.cart.products);
-  const [isCollapsed, setIsCollapsed] = useState(false);
-  const products = useSelector((state) => state.cart.products);
+  
+ 
   
   
   const addToCartHandler = (item) => {

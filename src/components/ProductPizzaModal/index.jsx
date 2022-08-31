@@ -7,7 +7,7 @@ import styles from './ProductPizzaModal.module.css'
 import pasketPlus from '../../assets/Images/basketPlus.svg'
 import { addToCart } from '../../store/Slices/productsSlice'
 import Share from '../Share'
-import {  NavLink, useNavigate } from 'react-router-dom'
+import {  NavLink } from 'react-router-dom'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import ProductMinModal from '../ProductMinModal'
 
@@ -15,7 +15,7 @@ import ProductMinModal from '../ProductMinModal'
 
 const TOTAL_SLIDES = 3
 const ProductPizzaModal = ({ data, closeModal, plus ,minus}) => {
- const navigate = useNavigate()
+
     const total = useTotal()
     
   const dispatch = useDispatch();
@@ -108,8 +108,7 @@ const ProductPizzaModal = ({ data, closeModal, plus ,minus}) => {
   
      <NavLink  className={({ isActive }) => (isActive ? styles.active : styles.active1 )}  to='/productPizzaModal'>  <div  className={color? styles.classicDiv1 :styles.classicDiv2} >PAN</div> </NavLink>
    <NavLink  className={({ isActive }) => (isActive ? styles.active : styles.active1 )}  to='/productPizzaModal'> <div  className={color? styles.classicDiv1 :styles.classicDiv2}  >CLASSIC</div></NavLink>
-  {/* <NavLink  className={({ isActive }) => (isActive ? styles.active : styles.active1 )}  to='/productCheesyModal'> <div  className={color? styles.classicDiv1 :styles.classicDiv2}  >CHEESY CRUST</div></NavLink> */}
-  <div  className={color? styles.classicDiv1 :styles.classicDiv2} onClick={()=> navigate('./productCheesyModal')}>CHEESY CRUST</div>
+  <NavLink  className={({ isActive }) => (isActive ? styles.active : styles.active1 )}  to='/productCheesyModal'> <div  className={color? styles.classicDiv1 :styles.classicDiv2}  >CHEESY CRUST</div></NavLink>
   <NavLink  className={({ isActive }) => (isActive ? styles.active : styles.active1 )}  to ='/productPizzasModal'> <div  className={color? styles.classicDiv1 :styles.classicDiv2}   >CHEESY BITES</div></NavLink> 
       
      </div>

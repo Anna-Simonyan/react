@@ -1,6 +1,5 @@
-import React,{  useState} from 'react'
-import { resetCart ,increament} from '../../store/Slices/productsSlice'
-import { useTotal } from '../../hooks/useTotal'
+import React from 'react'
+import { increament} from '../../store/Slices/productsSlice'
 import { useDispatch,useSelector } from 'react-redux'
 import close from '../../assets/Images/close.svg'
 import styles from './ProductModal.module.css'
@@ -10,18 +9,10 @@ import Share from '../Share'
 
 const ProductModal = ({ data, closeModal,plus,minus }) => {
  
-    const total = useTotal()
   const dispatch = useDispatch();
-  const darkMode = useSelector((state) => state.theme.darkMode);
   const items = useSelector((state) => state.cart.products);
-  const [isCollapsed, setIsCollapsed] = useState(false);
-  const products = useSelector((state) => state.cart.products);
-
  
-  const isCollapsedHandler = (e) => {
-    
-    setIsCollapsed((prev) => !prev);
-  };
+
   const addToCartHandler = (item) => {
     const res = items.some(e => e.id === item.id)
    
@@ -65,8 +56,9 @@ const ProductModal = ({ data, closeModal,plus,minus }) => {
           <div className={styles.priceDiv}>   <span style={{margin: 0,fontSize:'18px'}}> {data.price}    <span style={{margin: 0,fontSize:'18px'}}>AMD</span></span>
           <div style={{display:'flex',}}>
         <div className={styles.decrementDiv}>  <span  onClick={() => {
-                   
+                    if(data.count > 1) {
                     minus(data)
+                    }
                   }}  ><span style={{background:' transparent',
                     
                     fontSize:'22px',marginLeft:'1rem',
@@ -99,7 +91,7 @@ const ProductModal = ({ data, closeModal,plus,minus }) => {
             <div className={styles.catalogContainer}>
          
                 <div className={styles.catalogContainerChald}>
-              <div onClick={isCollapsedHandler}>
+              <div >
         <img src={data.picture1} alt="" />
         </div> 
         <p>{data.name1}</p> 
