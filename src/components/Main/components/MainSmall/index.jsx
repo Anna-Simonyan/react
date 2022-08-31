@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './MainSmall.module.css'
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux'
-import { asyncToggleTheme } from '../../../../store/Slices.js/themeSlice'
+import { asyncToggleTheme } from '../../../../store/Slices/themeSlice'
 import SmallFooter from '../../../SmallFooter'
 
 const MainSmall= () => {

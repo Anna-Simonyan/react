@@ -4,7 +4,7 @@ import pasketPlus from '../../assets/Images/basketPlus.svg'
 import { useDispatch,useSelector } from 'react-redux'
 import ProductModal from '../../components/ProductModal'
 import OrderFooter from '../../components/OrderFooter'
-import { addToCart, increament } from '../../store/Slices.js/productsSlice'
+import { addToCart, increament } from '../../store/Slices/productsSlice'
 import { products } from '../../data/data'
 import { useNavigate } from 'react-router-dom'
 

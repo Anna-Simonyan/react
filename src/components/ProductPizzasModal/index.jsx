@@ -2,18 +2,18 @@
 
 
 import React,{ useState} from 'react'
-import { resetCart ,increament,decrement} from '../../store/Slices.js/productsSlice'
+import { increament,decrement} from '../../store/Slices/productsSlice'
 import { useTotal } from '../../hooks/useTotal'
 import { useDispatch,useSelector } from 'react-redux'
 import close from '../../assets/Images/close.svg'
 import styles from './ProductPizzasModal.module.css'
 import pasketPlus from '../../assets/Images/basketPlus.svg'
-import { addToCart } from '../../store/Slices.js/productsSlice'
+import { addToCart } from '../../store/Slices/productsSlice'
 import Share from '../Share'
 import { NavLink } from 'react-router-dom'
-import pizza from '../../assets/Images/pizza.jpg'
 import { Carousel} from 'react-responsive-carousel'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+
 
 const ProductPizzasModal = ({ data, closeModal }) => {
     const total = useTotal()

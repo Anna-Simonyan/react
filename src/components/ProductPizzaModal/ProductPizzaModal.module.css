@@ -557,6 +557,47 @@ font-size: 14px;
     color: white;
 
 }
+.headerContainer{
+    
+    position: fixed;
+    font-size: calc(16px + .3vw);
+    line-height: 1.2;
+    font-weight: 600;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 6;
+    height: 70px;
+    padding: 1px 4vw;
+    background: #fff;
+    font-weight: 600;
+    line-height: 1.2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+
+}
+.headerContainerColor{
+
+    position: fixed;
+    font-size: calc(16px + .3vw);
+    line-height: 1.2;
+    font-weight: 600;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 6;
+    height: 80px;
+    padding: 1px 4vw;
+    background: #fff;
+    font-weight: 600;
+    line-height: 1.2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2e2e2e!important;
+  }
 
 @media only screen and (max-width: 768px){
 

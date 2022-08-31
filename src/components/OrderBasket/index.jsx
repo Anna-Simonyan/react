@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 
 import SmallFooter from '../SmallFooter'
 import { useSelector, useDispatch } from 'react-redux'
-import { resetCart ,increament,decrement,removeFromCart} from '../../store/Slices.js/productsSlice'
+import { resetCart ,increament,decrement,removeFromCart} from '../../store/Slices/productsSlice'
 import styles from './OrderBasket.module.css'
 import { useTotal } from '../../hooks/useTotal'
 

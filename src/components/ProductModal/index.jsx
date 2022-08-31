@@ -1,11 +1,11 @@
 import React,{  useState} from 'react'
-import { resetCart ,increament} from '../../store/Slices.js/productsSlice'
+import { resetCart ,increament} from '../../store/Slices/productsSlice'
 import { useTotal } from '../../hooks/useTotal'
 import { useDispatch,useSelector } from 'react-redux'
 import close from '../../assets/Images/close.svg'
 import styles from './ProductModal.module.css'
 import pasketPlus from '../../assets/Images/basketPlus.svg'
-import { addToCart } from '../../store/Slices.js/productsSlice'
+import { addToCart } from '../../store/Slices/productsSlice'
 import Share from '../Share'
 
 const ProductModal = ({ data, closeModal,plus,minus }) => {

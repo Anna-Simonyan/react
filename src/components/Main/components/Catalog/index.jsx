@@ -3,7 +3,7 @@ import styles from './Catalog.module.css'
 import pasketPlus from '../../../../assets/Images/basketPlus.svg'
 import miniPizza from '../../../../assets/Images/miniPizza.png'
 import { useDispatch,useSelector } from 'react-redux'
-import { addToCart, increament } from '../../../../store/Slices.js/productsSlice'
+import { addToCart, increament } from '../../../../store/Slices/productsSlice'
 import ProductModal from '../../../ProductModal'
 import {products} from '../../../../data/data'
 

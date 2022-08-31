@@ -1,21 +1,23 @@
 import React,{ useState,useEffect,useRef} from 'react'
-import { increament} from '../../store/Slices.js/productsSlice'
+import { increament} from '../../store/Slices/productsSlice'
 import { useTotal } from '../../hooks/useTotal'
 import { useDispatch,useSelector } from 'react-redux'
 import close from '../../assets/Images/close.svg'
 import styles from './ProductPizzaModal.module.css'
 import pasketPlus from '../../assets/Images/basketPlus.svg'
-import { addToCart } from '../../store/Slices.js/productsSlice'
+import { addToCart } from '../../store/Slices/productsSlice'
 import Share from '../Share'
 import {  NavLink, useNavigate } from 'react-router-dom'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import ProductMinModal from '../ProductMinModal'
-import ProductCheesyModal from '../ProductCheesyModal'
+
+
 
 const TOTAL_SLIDES = 3
 const ProductPizzaModal = ({ data, closeModal, plus ,minus}) => {
  const navigate = useNavigate()
     const total = useTotal()
+    
   const dispatch = useDispatch();
   
   const items = useSelector((state) => state.cart.products);
@@ -39,9 +41,6 @@ const ProductPizzaModal = ({ data, closeModal, plus ,minus}) => {
     else setCurrent(current - 1)
   }
   
-  const desired = e => {
-    setCurrent(Number(e.target.id))
-  }
   
   useEffect(() => {
     ref.current.style.transition = 'all 0.2s ease-in-out'
@@ -71,7 +70,7 @@ const ProductPizzaModal = ({ data, closeModal, plus ,minus}) => {
     <div>
    
           <div className={styles.ProductModalContainer} >
-       
+   
 <div className={styles.productModal}  >
 
 <div className={styles.divButArrowClose}>
@@ -271,7 +270,7 @@ const ProductPizzaModal = ({ data, closeModal, plus ,minus}) => {
      <ProductMinModal data={data} closeModal={() => toggleItem()} />
    
    )}
-   
+
    
    
    
