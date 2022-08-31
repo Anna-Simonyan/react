@@ -1,0 +1,552 @@
+.catalogContainer{
+    align-items: stretch;
+    display: flex;
+    grid-template-columns: unset;
+    grid-gap: unset;
+    position: relative;
+    left: 0;
+    z-index: 2;
+    transition: left .3s;
+    margin-top: 30px;
+    padding: 0vw 4vw;
+ 
+   
+}
+
+.catalogContainerChald{
+    width: 15.5vw;
+    min-width: 15.5vw;
+    max-width: 15.5vw;
+    margin-right: 3vw;
+    border-radius: 1vw;
+    position: relative;
+    border: 1px solid #ebebeb;
+    
+   
+}
+.catImg{
+    transition: all .3s linear;
+    height: 230px;
+}
+.catImg:hover{
+    transform: scale(1.1);  
+}
+
+
+.catalogContainerChald>div>img{
+    width: 100%;
+ 
+}
+.catalogContainerChald>p{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: calc(12px + .3vw);
+    font-weight: 600;
+    cursor: pointer;
+    line-height: 5vw;
+}
+
+.buttonDiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+
+}
+.buttonDiv>button{
+    width: 46%;
+    border-radius: 0;
+    padding: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 0;
+    background-color: #E33B41;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+ 
+}
+.buttonDiv>button:hover{
+    opacity: 0.9;
+}
+.buttonDiv>button>img{
+ width: 20x;
+ height: 20px;
+}
+.buttonDiv>div{
+    width: 46%;
+    background: #3d3d3d;
+    color: #fff;
+    margin: 0;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    line-height: 1;
+    font-size: 14px;
+ 
+}
+
+
+.minipizza{
+    display: flex;
+    margin-top: 80px;
+}
+.minipizza>img{
+    width: 35px;
+}
+.minipizza>div{
+  margin-top: 5px;
+  font-size: calc(20px + .3vw);
+    font-weight: 600;
+    color: #515151;
+    box-sizing: border-box;
+    margin-left: 0.5rem!important;
+}
+.varietyPizzas{
+    padding: 2vw 4vw;
+    font-weight: 700;
+    font-size: calc(18px + .3vw);
+    line-height: 1;
+}
+
+
+.orderFooter{
+    display: none;
+}
+
+.menuHeaderDiv{
+    padding: 0;
+   background: transparent;
+   box-shadow: none;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 6;
+   height: 60px;
+   padding: 0px 15px;
+   font-size: calc(16px + .3vw);
+   font-weight: 600; 
+
+  
+}
+.menuSvg{
+   width: 14px;
+   height: 14px;
+   fill:gray;
+   stroke: gray;
+}
+.menuSvg1{
+   width: 14px;
+   height: 14px;
+   
+    fill: #E33B41;
+   stroke: #E33B41;
+}
+.menuHeaderDiv1{
+   padding: 10px 15px;
+   background: #fff;
+   display: flex!important;
+   justify-content: space-between!important;
+   font-size: calc(14px + .3vw);
+   font-weight: 600;
+}
+.menuHeaderDiv2{
+   display: flex!important;
+   align-items: center!important;
+
+}
+.menuImageDiv{
+   width: 40px;
+   height: 40px;
+   border-radius: 12px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   border: 1px solid #ebebeb;
+}
+.menuImageDiv>img{
+   width: 40%;
+   height: 40%;
+}
+
+.menuDiv{
+   height: 42px;
+   border-radius: 15px;
+   display: flex!important;
+   border: 1px solid #ebebeb;
+}
+
+
+.menuDiv1{
+   width: 38px;
+   height: 38px;
+   border-radius: 12px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   stroke:#E33B41;
+}
+.menuDiv11{
+   width: 38px;
+   height: 38px;
+   border-radius: 12px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   background-color: rgb(235, 235, 235);
+   stroke:#E33B41;
+}
+
+
+.menuDiv2{
+   width: 38px;
+   height: 38px;
+   border-radius: 12px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   background-color: rgb(235, 235, 235);
+   stroke:#E33B41;
+}
+.menuDiv22{
+   width: 38px;
+   height: 38px;
+   border-radius: 12px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   stroke:#E33B41;
+}
+.menuSearchDiv{
+   margin-left: 0.5rem!important;
+   box-sizing: border-box;
+   width: 37px;
+   height: 37px;
+   border-radius: 12px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   background-color: #E33B41;
+}
+.menuSearchDiv>img{
+   width: 36%;
+   height: 36%;
+}
+.menuLangveagesDiv{
+   color: #fff;
+   font-size: calc(15px + .3vw);
+   margin-left: 0.5rem!important;
+   width: 37px;
+   height: 37px;
+   border-radius: 12px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   background-color: #E33B41;
+}
+.p1{
+  
+    margin-bottom: 0;
+    font-size: calc(12px + .3vw);
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.1rem;
+    height: 2.2rem;
+    box-sizing: border-box;
+    margin-top: 20px;
+  
+}
+.p{
+  
+    margin-bottom: 0;
+    font-size: calc(12px + .3vw);
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.1rem;
+    height: 2.2rem;
+    box-sizing: border-box;
+    margin-top: 20px;
+  
+}
+.pp{
+    margin-bottom: 0;
+    font-size: calc(12px + .3vw);
+    font-weight: 600;
+    cursor: pointer;
+    overflow: hidden;
+    height: 5.2rem;
+    box-sizing: border-box;
+    margin-top: 20px;
+    width: 100%;
+}
+.infoDiv1{
+    display: none;
+}
+.infoDiv{
+    color: #9d9d9d;
+    font-size: calc(8px + .3vw);
+
+}
+.catalogContainerColumn{
+    display: flex;
+    flex-direction: column;
+}
+.catalogContainerColumn{
+   display: none;
+}
+.catalogContainerChaldColumn{
+    border: 1px solid rgb(239 234 234);
+    border-radius: 20px;
+    display: flex;
+}
+.catImgColumn{
+    border-radius: 5vw;
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+   
+}
+.catImgColumn>img{
+    width: 62%;
+    object-fit: scale-down!important;
+    align-items: center;
+    transition: all .3s linear;
+    height: 190px;
+}
+.butNer{
+    display:flex;
+    flex-direction: column;
+  justify-content: space-between;
+    display: none;
+}
+.row{
+    display: flex;
+    margin: auto;
+    line-height: 5vw;
+}
+.row1{
+    display: flex;
+    flex-direction: column;
+
+}
+.column1{
+    display: flex;
+    
+}
+.column{
+    display: flex;
+    margin: auto;
+   
+    
+}
+.buttonDivDiv{
+    width: 8vw;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;  
+    background-color: #E33B41;
+    color: white;
+    padding: 7px;
+    cursor: pointer;
+    border-radius: 1vw;
+    margin-bottom: 22px;
+}
+.buttonDivColumn{
+    width: 8vw;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;  
+    background-color: #E33B41;
+    color: white;
+    padding: 7px;
+    cursor: pointer;
+    border-radius: 1vw;
+    margin-left: 10%;
+    margin-right: 20px;
+    margin-left: 40vw;
+    margin-bottom: 22px;
+
+}
+
+.buttonDivColumn>div{
+    width: 57%;
+    position: relative;
+    background-color: white;
+    color: #515151;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    line-height: 1px;
+    font-size: 14px;
+    right: 740em;
+    
+
+}
+.buttonDivColumn>button{
+    width: 45%;
+    border-radius: 0;
+    padding: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 0;
+    background-color: #E33B41;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: white;
+    border: none;
+    cursor: pointer;
+  
+
+}
+.butNer{
+    display: none;
+}
+.buttonDivColumn>button>img{
+    display:none
+}
+.menuHeaderDiv{
+    display: none;
+}
+@media only screen and (max-width: 768px){
+
+    .p1{
+        display: none;
+    }
+    .menuHeaderDiv{
+display: block;
+    }
+    .catalogContainer{
+        display: grid;
+        grid-template-columns: calc(50% - 7.5px) calc(50% - 7.5px);
+        grid-gap: 15px;
+        padding: 15px 0;
+        
+    }
+    
+    .buttonDiv{
+        display: none;
+    }
+    .catalogContainerChald{
+        width: 18.5vw;
+        min-width: 41.5vw;
+        max-width: 15.5vw;
+        margin-right: 3vw;
+        border-radius: 1vw;
+        position: relative;
+        border: 1px solid #ebebeb;
+        margin-left: 6vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+    .buttonDivDiv{
+        background: #E33B41;
+        color: #fff;
+        padding: 7px;
+        cursor: pointer;
+        border-radius: 3vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 34vw;
+        height: 16px;
+        margin-left: 3vw;
+    }
+    .buttonDivDiv>button>img{
+        display: none;
+    }
+.buttonDivDiv>button{
+    border: none;
+    background-color: #E33B41;
+    color: white;
+}
+    .catalogContainerChald{
+       
+        width: 18.5vw;
+        min-width: 41.5vw;
+        max-width: 15.5vw;
+        margin-right: 3vw;
+        border-radius: 1vw;
+        position: relative;
+        border: 1px solid #ebebeb;
+        margin-left: 6vw;
+    }
+    .catalogContainerChald>p{
+        line-height: 11vw;
+    }
+    
+    .buttonDiv>button{
+        position: absolute;
+    }
+    .buttonDiv>div{
+        width: 45%;
+    position: relative;
+    background: white;
+    bottom: 29px;
+    color: #515151;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1;
+    font-size: 14px;
+  
+
+    }
+    
+    .buttonDiv>button>img{
+        display: none;
+    }
+    .buttonDiv>button{
+        height: 20px;
+    }
+    .orderFooter{
+        display: block;
+    }
+    .butNer{
+        display: block;
+    }
+    .catalogContainerColumn{
+        display: block;
+    }
+}

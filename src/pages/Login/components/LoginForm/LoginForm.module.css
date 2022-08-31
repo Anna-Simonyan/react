@@ -1,0 +1,301 @@
+.formContainer{
+   
+    flex-direction: column;
+    justify-content: center;
+    padding: 3vw 10vw;
+    font-size: calc(10px + .3vw);
+}
+.registerDiv{
+    text-align: center;
+    font-size: calc(16px + .3vw);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    margin: auto;
+
+}
+.registerDivOne{
+    text-align: center;
+    font-size: calc(16px + .3vw);
+    font-weight: 600;
+    margin-bottom: 20px;
+  
+    margin: auto;  
+}
+.registerDiv1{
+    grid-template-columns: 43% 43%;
+    grid-gap: 2%;
+    font-size: calc(10px + .3vw);
+}
+.registerDivInput{
+    height: 40px;
+    margin-bottom: 1rem!important;
+    font-size: calc(10px + .3vw);
+    border-radius: 15px;
+    padding: 3px ;
+    padding: 3px 13px;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: transparent;
+  
+}
+.registerDivInput11{
+    height: 40px;
+    margin-bottom: 1rem!important;
+    font-size: calc(10px + .3vw);
+    border-radius: 15px;
+    padding: 3px ;
+    padding: 3px 1px;
+    border: 1px solid #ebebeb;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: transparent;
+  
+}
+.registerDivInput1{
+    height: 40px;
+    margin-bottom: 1rem!important;
+    font-size: calc(10px + .3vw);
+    border-radius: 15px;
+    padding: 3px ;
+    padding: 3px 13px;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: transparent;
+  
+}
+.registerDivInput>input{
+    background: none;
+    border: none;
+    width: 100%;
+    font-size: inherit;
+    outline: none;
+}
+.registerDivInput11>input{
+    background: none;
+    border: none;
+    width: 100%;
+    font-size: inherit;
+    outline: none;
+}
+.registerDivInput1{
+    height: 40px;
+    margin-bottom: 1.5rem!important;
+    font-size: calc(10px + .3vw);
+    border-radius: 15px;
+    padding: 3px ;
+    padding: 3px 13px;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: transparent;
+   
+}
+.registerDivInput1>input{
+    background: none;
+    border: none;
+    width: 100%;
+    font-size: inherit;
+    outline: none;
+}
+
+
+.selectDiv{
+    display: flex;
+    position: relative;
+    margin-bottom: 1.5rem!important;
+    
+      
+}
+
+.selectDivChild1{
+    
+    border-radius: 15px;
+    padding: 5px 22px;
+    height: 40px;
+    border: 1px solid #ebebeb;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    outline: none;
+    background: transparent;
+   
+}
+.loginFormDiv{
+    padding: 10px;
+   
+}
+
+.selectDivChild{
+  
+    height: 40px;
+    width: 72vw;
+    border-radius: 15px;
+    padding: 3px 13px;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+   
+    background: transparent;
+}
+.selectDivChild>input{
+    background: none;
+    border: none;
+    width: 100%;
+    font-size: inherit;
+    outline: none;
+}
+.email{
+    height: 40px;
+    border-radius: 15px;
+    padding: 3px 13px;
+    margin-bottom: 1rem!important;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    background: transparent;
+}
+.email>input{
+    background: none;
+    border: none;
+    width: 100%;
+    font-size: inherit;
+    outline: none;  
+}
+.checkbox{
+    height: 40px;
+    border-radius: 15px;
+    padding: 3px 13px;
+ 
+    border: 1px solid #ebebeb;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    background: transparent;
+}
+.submitDiv{
+    margin: 0!important;
+    font-size: calc(10px + .3vw);
+}
+.submitDiv>button{
+    margin-top: 25px;
+    border-radius: 13px;
+    cursor: pointer;
+    position: relative;
+    border: 0;
+    background: #E33B41;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    width: 100%;
+    margin-top: 40px;
+    cursor: pointer;
+}
+.logReg1{
+    display: none;
+    margin-top: 2vw;
+}
+
+.logReg{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    line-height: 10vw;
+
+   
+}
+
+.logReg>div{
+    width: 30vw;
+    font-size: calc(16px + .3vw);
+    font-weight: 600;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #ebebeb;
+    transition: all .3s;
+    text-align: center;
+    line-height: 10vw;
+}
+
+.active1{
+    width: 50%;
+    color: gray;
+ 
+  }
+  
+  .active{
+    width: 50%;
+    color:red;
+   
+  }
+
+.loginFormDiv2{
+    display: block;
+}
+.arrowDiv1{
+    display: none;
+}
+.arrowDiv{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    display: flex;
+    z-index: 6;
+    height: 35px;
+    padding: 10px 15px;
+    font-size: calc(16px + .3vw);
+    font-weight: 600;
+    box-shadow: 1px 0 5px 1px hsl(0deg 0% 54% / 40%);
+
+}
+.arrow{
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    border: 1px solid #ebebeb;
+    background-color: transparent;
+    
+}
+.arrow>img{
+    width: 14px;
+    height: 14px;
+}
+.divNavlink{
+    border-bottom: 2px solid ;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 768px){
+
+    .logReg1{
+        display: block;
+    }
+    .arrowDiv1{
+        display: block;
+    }
+   
+}
+
+

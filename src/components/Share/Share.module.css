@@ -1,0 +1,362 @@
+.effect{
+    width: 4%;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    transition: all .3s;
+    z-index: 5;
+    top: 100px;
+}
+.sideBar{
+   
+   
+   display: block;
+ 
+}
+.open{
+  
+    display: none;
+}
+
+
+.divButton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.divButton>button{
+    width: calc(5px + 1vw);
+    height: calc(6px + 1vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20%;
+    padding: 0;
+    border: 2px solid #212121;
+    border-radius: 20%;
+    background-color: transparent;
+    overflow: hidden;
+    background: linear-gradient(0deg, black,  black) no-repeat right bottom / 0 var(--bg-h);
+    transition: background-size 350ms;
+    --bg-h: 100%;
+    
+}
+.divButton>button:where(:hover, :focus-visible) {
+    background-size: 100% var(--bg-h);
+    background-position-x: left;
+    color: white;
+  }
+
+.divButton>button>i{
+    font-size: calc(5px + .5vw);
+    z-index: 1;
+    
+}
+.a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(15px + 2vw);
+    height: calc(15px + 2vw);
+    position: relative;
+    margin-bottom: 20%;
+    color: #212121;
+    font-size: calc(12px + .5vw);
+    text-decoration: none!important;
+    border: 2px solid #ebebeb;
+    background-color: #eaf1fb;
+    border-radius: 15%;
+    overflow: hidden;
+    cursor: pointer;
+   
+    color: inherit;
+   
+  background: linear-gradient(0deg,  #3b579d,  #3b579d) no-repeat right bottom / 0 var(--bg-h);
+  transition: background-size 350ms;
+  --bg-h: 100%;
+}
+.aa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(15px + 2vw);
+    height: calc(15px + 2vw);
+    position: relative;
+    margin-bottom: 20%;
+    color: #212121;
+    font-size: calc(12px + .5vw);
+    text-decoration: none!important;
+    border: 2px solid #ebebeb;
+    background-color: #eaf1fb;
+    border-radius: 15%;
+    overflow: hidden;
+    cursor: pointer;
+   
+    color: inherit;
+    
+  background: linear-gradient(0deg,  #17a2b8,  #17a2b8) no-repeat right bottom / 0 var(--bg-h);
+  transition: background-size 350ms;
+  --bg-h: 100%;
+}
+.aaa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(15px + 2vw);
+    height: calc(15px + 2vw);
+    position: relative;
+    margin-bottom: 20%;
+    color: #212121;
+    font-size: calc(12px + .5vw);
+    text-decoration: none!important;
+    border: 2px solid #ebebeb;
+    background-color: #eaf1fb;
+    border-radius: 15%;
+    overflow: hidden;
+    cursor: pointer;
+   
+    color: inherit;
+    
+  background: linear-gradient(0deg,  red,  red) no-repeat right bottom / 0 var(--bg-h);
+  transition: background-size 350ms;
+  --bg-h: 100%;
+}
+.aaaa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(15px + 2vw);
+    height: calc(15px + 2vw);
+    position: relative;
+    margin-bottom: 20%;
+    color: #212121;
+    font-size: calc(12px + .5vw);
+    text-decoration: none!important;
+    border: 2px solid #ebebeb;
+    background-color: #eaf1fb;
+    border-radius: 15%;
+    overflow: hidden;
+    cursor: pointer;
+   
+    color: inherit;
+    
+  background: linear-gradient(0deg,   #0274b3,   #0274b3) no-repeat right bottom / 0 var(--bg-h);
+  transition: background-size 350ms;
+  --bg-h: 100%;
+}
+
+.divButton>a:where(:hover, :focus-visible) {
+    background-size: 100% var(--bg-h);
+    background-position-x: left;
+    color: white;
+  }
+  .divButton>.aa:where(:hover, :focus-visible) {
+    background-size: 100% var(--bg-h);
+    background-position-x: left;
+    color: white;
+  }
+  .divButton>.aaa:where(:hover, :focus-visible) {
+    background-size: 100% var(--bg-h);
+    background-position-x: left;
+    color: white;
+  }
+  .divButton>.aaaa:where(:hover, :focus-visible) {
+    background-size: 100% var(--bg-h);
+    background-position-x: left;
+    color: white;
+  }
+  .aa>a{
+    color: #646262;
+    
+}
+  .aa>a>i:hover{
+    color: white;
+  }
+ 
+  
+ 
+  
+.aboutInfo{
+    padding: 4vw;
+    font-size: calc(16px + .3vw);
+}
+.shareDiv{
+    width: 100%!important;
+    display: flex!important;
+    justify-content: flex-end!important;
+    font-size: calc(16px + .3vw);
+}
+.share{
+    border: 1px solid red;
+    border-radius: 8px;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-size: calc(14px + .3vw);
+}
+.share>i{
+    color: red;
+}
+.aboutDescription{
+    margin-bottom: 3rem!important;
+   
+    line-height: 1.5;
+    color: #515151;
+}
+.aboutDescription>p{
+    font-size: calc(14px + .3vw);
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.locationContainer{
+    width: 100%;
+    display: flex;
+}
+.locationDiv{
+    width: 50%;
+    margin-bottom: 3rem!important;
+}
+.location{
+    margin-bottom: 1rem!important;
+    align-items: center!important;
+    display: flex!important;
+}
+.location>img{
+    
+    width: calc(18px + 0.3vw);
+    margin-right: 1rem!important;
+}
+.location>span{
+    color: initial;
+    font-size: calc(18px + .3vw);
+}
+.locationADiv{
+    font-size: calc(14px + .3vw);
+    box-sizing: border-box;
+    margin-bottom: 3rem!important;
+    line-height: 1.5;
+}
+
+
+.aboutPhoneNumber{
+    margin-bottom: 2rem!important;
+    font-size: calc(14px + .3vw);
+}
+.phoneNumber{
+    margin-bottom: 1rem!important;
+    display: flex!important;
+    align-items: center!important;
+}
+.phoneNumber>img{
+    width: calc(16px + 0.3vw);
+}
+.phoneNumber>span{
+    color: initial;
+    font-size: calc(16px + .3vw);
+    margin-left: 1rem!important;
+}
+.aDiv>a{
+    color: #007bff;
+    background-color: transparent;
+}
+.aboutWebSite{
+  margin-top: 3rem;
+  margin-bottom: 1rem!important;
+  display: flex!important;
+  align-items: center!important;
+ 
+}
+.aboutWebSite>img{
+    width: calc(16px + 0.3vw);
+    
+}
+.aboutWebSite>span{
+  
+    color: initial;
+      margin-left: 1rem!important;
+}
+.facebookDiv>ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.facebookDiv>ul>li:first-child{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    position: relative;
+    margin-right: 15px;
+    background: #3b579d;
+    color: white;
+}
+.facebookDiv>ul>li{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    position: relative;
+    margin-right: 15px;
+    background: #dd4a3a;
+    color: white;
+}
+.facebookDiv>ul>li>a{
+    color: white;
+}
+.workingDiv{
+    width: 50%!important;
+    margin-bottom: 3rem!important;
+}
+.hoursDiv{
+    margin-bottom: 1rem!important;
+    align-items: center!important;
+    display: flex!important;
+}
+.hoursDiv>img{
+    width: calc(16px + 0.3vw);
+    margin-right: 1rem!important;
+}
+.hoursDiv>span{
+    color: initial;
+    font-size: calc(16px + .3vw);
+}
+.weekDiv{
+    margin-bottom: 0.2rem!important;
+    justify-content: space-between!important;
+    display: flex!important;
+
+}
+.weekDiv>p{
+    font-size: calc(14px + .3vw);
+}
+.aboutFacility{
+    margin-bottom: 3rem!important;
+}
+.aboutFacilityUlDiv>ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+.aboutFacilityUlDiv>ul>li{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin-left: 12px;
+    color: red;
+    opacity: 0.8;
+    
+}
+.li{
+    background-color: red;
+    color: white;
+}

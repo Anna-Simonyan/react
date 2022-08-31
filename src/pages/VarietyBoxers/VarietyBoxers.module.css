@@ -1,0 +1,484 @@
+.pizzas{
+    padding: 2vw 4vw;
+    font-weight: 700;
+    font-size: calc(18px + .3vw);
+    
+    line-height: 1;
+
+}
+
+.buttonDiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+.buttonDiv>button{
+    width: 45%;
+    border-radius: 0;
+    padding: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 0;
+    background-color: #E33B41;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    color: white;
+    border: none;
+    cursor: pointer;
+ 
+}
+.buttonDiv>button:hover{
+    opacity: 0.9;
+}
+.buttonDiv>button>img{
+ width: 18px;
+ height: 18px;
+}
+.buttonDiv>div{
+    width: 45%;
+    background: #3d3d3d;
+    color: #fff;
+    margin: 0;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    line-height: 1;
+    font-size: 14px;
+}
+.buttonDiv>div>div:last-child{
+    margin-left: 0.5vw;
+}
+.pizzasContainer{
+    
+    display: grid;
+    grid-template-columns: calc((100% - 12vw)/5) calc((100% - 12vw)/5) calc((100% - 12vw)/5) calc((100% - 12vw)/5) calc((100% - 12vw)/5);
+    grid-column-gap: 3vw;
+   
+    padding: 0vw 4vw;
+}
+
+
+.pizzaImgDiv{
+   
+    margin-top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    cursor: pointer;
+   
+    border-radius: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+.pizzaImgDiv:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+.p{
+ 
+    margin-bottom: 0;
+    font-size: calc(12px + .3vw);
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.1rem;
+    height: 2.2rem;
+    box-sizing: border-box;
+    margin-top: 20px;
+  
+}
+.p1{
+    margin-bottom: 0;
+    font-size: calc(12px + .3vw);
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.1rem;
+    height: 2.2rem;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+.cardDiv{
+    border: 1px solid rgb(239 234 234);
+    border-radius: 20px;
+}
+.pizzaImgDiv>img{
+width: 100%;
+object-fit: scale-down!important;
+align-items: center;
+ transition: all .3s linear;
+ margin-top: 56px;
+ height: 190px;
+}
+.pizzaImgDiv>img:hover{
+    transform: scale(1);
+   
+}
+.orderFooter{
+    display: none;
+}
+.pizzasContainerColumn{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.menuHeaderDiv{
+    padding: 0;
+   background: transparent;
+   box-shadow: none;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 6;
+   height: 60px;
+   padding: 0px 15px;
+   font-size: calc(16px + .3vw);
+   font-weight: 600; 
+display: none;
+  
+}
+.menuSvg{
+   width: 14px;
+   height: 14px;
+   fill:gray;
+   stroke: gray;
+}
+.menuSvg1{
+   width: 14px;
+   height: 14px;
+   
+    fill: #E33B41;
+   stroke: #E33B41;
+}
+.menuHeaderDiv1{
+   padding: 10px 15px;
+   background: #fff;
+   display: flex!important;
+   justify-content: space-between!important;
+   font-size: calc(14px + .3vw);
+   font-weight: 600;
+}
+.menuHeaderDiv2{
+   display: flex!important;
+   align-items: center!important;
+
+}
+.menuImageDiv{
+   width: 40px;
+   height: 40px;
+   border-radius: 12px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   border: 1px solid #ebebeb;
+}
+.menuImageDiv>img{
+   width: 40%;
+   height: 40%;
+}
+
+.menuDiv{
+   height: 42px;
+   border-radius: 15px;
+   display: flex!important;
+   border: 1px solid #ebebeb;
+}
+
+
+.menuDiv1{
+   width: 38px;
+   height: 38px;
+   border-radius: 12px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   stroke:#E33B41;
+}
+.menuDiv11{
+   width: 38px;
+   height: 38px;
+   border-radius: 12px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   background-color: rgb(235, 235, 235);
+   stroke:#E33B41;
+}
+
+
+.menuDiv2{
+   width: 38px;
+   height: 38px;
+   border-radius: 12px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   background-color: rgb(235, 235, 235);
+   stroke:#E33B41;
+}
+.menuDiv22{
+   width: 38px;
+   height: 38px;
+   border-radius: 12px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   stroke:#E33B41;
+}
+.menuSearchDiv{
+   margin-left: 0.5rem!important;
+   box-sizing: border-box;
+   width: 37px;
+   height: 37px;
+   border-radius: 12px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   background-color: #E33B41;
+}
+.menuSearchDiv>img{
+   width: 36%;
+   height: 36%;
+}
+.menuLangveagesDiv{
+   color: #fff;
+   font-size: calc(15px + .3vw);
+   margin-left: 0.5rem!important;
+   width: 37px;
+   height: 37px;
+   border-radius: 12px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   background-color: #E33B41;
+}
+.pizzasContainerColumn{
+    display: none;
+}
+.row{
+    display: flex;
+    margin: auto;
+    line-height: 5vw;
+}
+.row1{
+    display: flex;
+    flex-direction: column;
+}
+.column1{
+    display: flex;
+}
+.column{
+    display: flex;
+    margin: auto;
+}
+.cardDivColumn{
+    border: 1px solid rgb(239 234 234);
+    border-radius: 20px;
+    display: flex;
+   
+}
+.pizzaImgDivColumn{
+    
+    border-radius: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.pizzaImgDivColumn>img{
+    width: 62%;
+    object-fit: scale-down!important;
+    align-items: center;
+     transition: all .3s linear;
+     height: 190px;
+}
+
+.pp{
+    margin-bottom: 0;
+    font-size: calc(12px + .3vw);
+    font-weight: 600;
+    cursor: pointer;
+    overflow: hidden;
+    height: 5.2rem;
+    box-sizing: border-box;
+    margin-top: 20px;
+    width: 100%;
+}
+.buttonDivColumn{
+    width: 8vw;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;  
+    background-color: #E33B41;
+    color: white;
+    padding: 7px;
+    cursor: pointer;
+    border-radius: 1vw;
+    margin-left: 10%;
+    margin-right: 20px;
+    margin-left: 40vw;
+    margin-bottom: 22px;
+
+}
+.buttonDivColumn>div{
+    width: 57%;
+    position: relative;
+    background-color: white;
+    color: #515151;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    line-height: 1px;
+    font-size: 14px;
+    right: 740em;
+    
+
+}
+.buttonDivColumn>button{
+    width: 45%;
+    border-radius: 0;
+    padding: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 0;
+    background-color: #E33B41;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.buttonDivColumn>button>img{
+    display:none
+}
+.butNer{
+    display:flex;
+    flex-direction: column;
+  justify-content: space-between;
+    display: none;
+}
+
+
+@media only screen and (max-width: 768px){
+
+    .menuHeaderDiv{
+        display: block;
+    }
+    .p1{
+        display: none;
+    }
+    .pizzasContainer{
+        display: grid;
+    grid-template-columns: calc(50% - 7.5px) calc(50% - 7.5px);
+    grid-gap: 15px;
+    padding: 15px 0;
+    }
+    .buttonDiv{
+        background: #E33B41;
+        color: #fff;
+        padding: 7px;
+        cursor: pointer;
+        border-radius: 3vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40vw;
+        height: 16px;
+        margin-left: 3vw;
+       display: none;
+    
+    }
+   
+    .buttonDivDiv{
+        background: #E33B41;
+        color: #fff;
+        padding: 7px;
+        cursor: pointer;
+        border-radius: 3vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40vw;
+        height: 16px;
+        margin-left: 3vw;
+    }
+    .buttonDivDiv>button{
+        background-color: #E33B41;
+        color: white;
+        border: none;
+    }
+    .buttonDivDiv>button>img{
+        display: none;
+        
+    }
+    
+    .buttonDiv>div{
+        width: 45%;
+    position: relative;
+    background: white;
+    bottom: 29px;
+    color: #515151;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    line-height: 1;
+    font-size: 14px;
+
+    }
+    .buttonDiv>button>img{
+        display: none;
+    }
+    .buttonDiv>button{
+        height: 20px;
+        position: absolute;
+        width: 0px;
+    }
+    .orderFooter{
+        display: block;
+    }
+  
+    .butNer{
+        display: block;
+    }
+    .pizzasContainerColumn{
+        display: block;
+    }
+     
+}

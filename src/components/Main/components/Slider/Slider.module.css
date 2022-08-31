@@ -1,0 +1,224 @@
+.sliderContainer{
+    width: 92vw;
+    min-width: 92vw;
+    margin: auto auto 80px;
+    margin-top: 40px;
+}
+
+.sliderChild{
+   display: flex;
+   justify-content: space-between;
+   height: 66px;
+}
+
+.sliderChild1{
+display: flex;
+}
+.sliderChild1>div{
+    margin-left: 0.5rem!important;
+
+}
+.sliderChild1>div>img{
+    width: 35px;
+   
+  
+}
+.categoey{
+    font-size: 18px;
+    padding: 8px;
+    font-weight: bold;
+}
+.a{
+    width: 100px;
+    height: 100px;
+    margin-right: 45px;
+  
+}
+a{
+    text-decoration: none;
+}
+.a>a{
+    color: red;
+
+  font-size: 14px;
+}
+.pizzaImg>div>img{
+    height: 160px;
+    width: 14vw;
+    min-width: 14vw;
+    max-width: 14vw;
+    margin-right: 1.6vw;
+    border-radius: 2vw;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ebebeb;
+    cursor: pointer;
+    
+}
+
+.img{
+    transition: all 0.3s ease-in-out;
+}
+.img:hover{
+   
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+   
+}
+
+.pizzaImg{
+    width: 14vw;
+    min-width: 14vw;
+    max-width: 14vw;
+    margin-right: 1.6vw;
+    border-radius: 2vw;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ebebeb;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all .3s linear;
+    
+}
+
+.namePizzas{
+    height: 50px;
+    width: 14vw;
+    position: absolute;
+    bottom: 0;
+border-bottom-left-radius: 2vw 2vw;
+border-bottom-right-radius: 2vw 2vw;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0,.5);
+   
+}
+
+.namePizzas>p{
+    margin: auto;
+}
+.minipizza{
+    display: flex;
+    margin-top: 80px;
+}
+.minipizza>img{
+    width: 35px;
+}
+.minipizza>div{
+  margin-top: 5px;
+  font-size: calc(20px + .3vw);
+    font-weight: 600;
+    color: #515151;
+    box-sizing: border-box;
+    margin-left: 0.5rem!important;
+}
+.slick-prev:before{
+    background-color: red;
+}
+.aaaaa > .slick-slider > .slick-arrow{
+    background: red!important;
+}
+.img1{
+    background-image: url('https://f.bonee.net/images/7e85e201-fe6e-89cb-e00e-8696d723961e_3.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    overflow: hidden;
+    height: 0;
+    padding-bottom: 100%;
+    transform: scale(1);
+    transition: all .3s linear;
+}
+
+.img2{
+    background-image: url('https://f.bonee.net/images/1171f622-ca6e-fdfc-bbf9-44c680a6ed41_3.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    overflow: hidden;
+    height: 0;
+    padding-bottom: 100%;
+    transform: scale(1);
+    transition: all .3s linear;
+}
+.img3{
+    background-image: url('https://f.bonee.net/images/d9172c02-3f38-2b9c-8841-86bbc1b50061_3.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    overflow: hidden;
+    height: 0;
+    padding-bottom: 100%;
+    transform: scale(1);
+    transition: all .3s linear;
+
+}
+.img4{
+    background-image: url('https://f.bonee.net/images/b7756f6e-2b2c-bb4e-6dcf-f5f2ec969818_3.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    overflow: hidden;
+    height: 0;
+    padding-bottom: 100%;
+    transform: scale(1);
+    transition: all .3s linear;
+
+}
+.img5{
+    background-image: url('https://f.bonee.net/images/7e3f95c5-6df9-af78-f289-9e447703ad77_3.webp');
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    overflow: hidden;
+    height: 0;
+    padding-bottom: 100%;
+    transform: scale(1);
+    transition: all .3s linear;
+
+}
+.img6{
+    background-image: url('https://f.bonee.net/images/611aa187-3b2f-dabc-cdac-0ba32844820e_3.webp');
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    overflow: hidden;
+    height: 0;
+    padding-bottom: 100%;
+    transform: scale(1);
+    transition: all .3s linear;
+
+}
+
+.img7{
+    background-image: url('https://f.bonee.net/images/c48bb3ac-d9e0-4e40-b1a6-185f23c32273_3.webp');
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    overflow: hidden;
+    height: 0;
+    padding-bottom: 100%;
+    transform: scale(1);
+    transition: all .3s linear;
+
+}
+.img8{
+    background-image: url('https://f.bonee.net/images/4cc2fa04-6771-dd44-7e0b-6c478b02377c_3.webp');
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    overflow: hidden;
+    height: 0;
+    padding-bottom: 100%;
+    transform: scale(1);
+    transition: all .3s linear;
+
+}
+
+

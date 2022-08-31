@@ -1,0 +1,139 @@
+.menuHeaderDiv{
+     padding: 0;
+    background: transparent;
+    box-shadow: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 6;
+    height: 60px;
+    padding: 0px 15px;
+    font-size: calc(16px + .3vw);
+    font-weight: 600; 
+ 
+   
+}
+.menuSvg{
+    width: 14px;
+    height: 14px;
+    fill:gray;
+    stroke: gray;
+}
+.menuSvg1{
+    width: 14px;
+    height: 14px;
+    
+     fill: #E33B41;
+    stroke: #E33B41;
+}
+ .menuHeaderDiv1{
+    padding: 10px 15px;
+    background: #fff;
+    display: flex!important;
+    justify-content: space-between!important;
+    font-size: calc(14px + .3vw);
+    font-weight: 600;
+}
+.menuHeaderDiv2{
+    display: flex!important;
+    align-items: center!important;
+
+}
+.menuImageDiv{
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid #ebebeb;
+}
+.menuImageDiv>img{
+    width: 40%;
+    height: 40%;
+}
+
+.menuDiv{
+    height: 42px;
+    border-radius: 15px;
+    display: flex!important;
+    border: 1px solid #ebebeb;
+}
+
+
+.menuDiv1{
+    width: 38px;
+    height: 38px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    /* background-color: rgb(235, 235, 235); */
+    stroke:#E33B41;
+}
+.menuDiv11{
+    width: 38px;
+    height: 38px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: rgb(235, 235, 235);
+    stroke:#E33B41;
+}
+
+
+.menuDiv2{
+    width: 38px;
+    height: 38px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: rgb(235, 235, 235);
+    stroke:#E33B41;
+}
+.menuDiv22{
+    width: 38px;
+    height: 38px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    stroke:#E33B41;
+}
+.menuSearchDiv{
+    margin-left: 0.5rem!important;
+    box-sizing: border-box;
+    width: 37px;
+    height: 37px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #E33B41;
+}
+.menuSearchDiv>img{
+    width: 36%;
+    height: 36%;
+}
+.menuLangveagesDiv{
+    color: #fff;
+    font-size: calc(15px + .3vw);
+    margin-left: 0.5rem!important;
+    width: 37px;
+    height: 37px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #E33B41;
+}

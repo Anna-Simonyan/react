@@ -1,0 +1,545 @@
+.loginContainer{
+    height: 100vh;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    min-height: 100vh;
+   
+}
+.loginContainer>ul{
+   
+    position: relative;
+    background: #E33B41;
+    color: #fff;
+    padding: 12vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 1rem!important;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+.loginContainer>ul>div>a{
+    color: white;
+}
+.loginContainer>ul>div{
+    position: absolute;
+    z-index: 4;
+    left: 4vw;
+    top: 4vw;
+    font-size: calc(10px + .3vw);
+    color: #fff;
+}
+.loginContainer>ul>div>img{
+    transform: rotate(0deg);
+    width: 6px;
+    margin-right: 1rem!important;
+    vertical-align: middle;
+}
+.loginContainer>ul>div>img>a{
+    cursor: pointer;
+}
+.loginContainer>ul>li{
+   
+    color: #fff;
+  margin-top: 100px;
+}
+.loginContainer>ul>li>img{
+    position: absolute;
+    width: 90%;
+    height: auto;
+    top: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+    color: #fff;
+}
+.loginLiDiv{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.loginLiDiv1{
+    display: flex!important;
+}
+.loginLiDiv2{
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    min-height: 30px;
+    border: 10px solid #fff;
+    border-radius: 100%;
+    margin-right: 1rem!important;
+}
+.loginLiDiv3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+}
+.loginLiDiv3P{
+    font-size: calc(10px + .3vw);
+    color: #ebebeb;
+   
+}
+.loginLiDiv3P1{
+    font-size: calc(18px + .3vw);
+    font-weight: 600;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+}
+.log{
+    font-size: calc(10px + .3vw);
+    text-align: center;
+    color: #fff;
+    margin-top: 24px;
+}
+.log1{
+    display: flex!important;
+    justify-content: center!important;
+}
+.log1>label{
+    position: relative;
+    border: 0;
+background-color: #E33B41;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    width: 100%;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 13px;
+    box-shadow: 0 0 5px 1px rgb(0 0 0 / 30%);
+    width: 80%;
+    cursor: pointer;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+.formContainer{
+    
+    flex-direction: column;
+    justify-content: center;
+    padding: 3vw 10vw;
+    font-size: calc(10px + .3vw);
+}
+
+
+.registerDiv{
+    text-align: center;
+    font-size: calc(16px + .3vw);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    margin: auto;
+
+}
+.registerDivOne{
+    text-align: center;
+    font-size: calc(16px + .3vw);
+    font-weight: 600;
+    margin-bottom: 20px;
+  
+    margin: auto;  
+}
+.registerDiv1{
+    display: grid;
+    grid-template-columns: 43% 43%;
+    grid-gap: 2%;
+    font-size: calc(10px + .3vw);
+}
+.submitDiv{
+    margin: 0!important;
+    font-size: calc(10px + .3vw);
+}
+.submitDiv>button{
+    margin-top: 25px;
+    border-radius: 13px;
+    cursor: pointer;
+    position: relative;
+    border: 0;
+    background: #E33B41;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    width: 100%;
+    margin-top: 40px;
+    cursor: pointer;
+}
+.registerDivText{
+    text-align: center;
+    line-height: 5.5;
+    font-size: calc(11px + .3vw);
+    color: #9d9d9d;
+}
+.emailDiv{
+    margin-bottom: 1.5rem!important;
+    font-size: calc(12px + .3vw);
+margin-top: 10px;
+
+
+
+}
+.passwordDiv{
+    margin-bottom: 1.5rem!important;
+    font-size: calc(12px + .3vw);
+margin-top: 10px; 
+
+}
+
+.passwordDiv>div{
+    height: 40px;
+    border-radius: 15px;
+    padding: 3px 13px;
+  
+    border: 1px solid #ebebeb;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 93%;
+    background: transparent;  
+    margin-bottom: 1.5rem!important;
+}
+.passwordDiv1{
+    height: 40px;
+    border-radius: 15px;
+    padding: 3px 13px;
+  
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 93%;
+    background: transparent;  
+    margin-bottom: 1.5rem!important;
+
+}
+.passwordDiv2{
+    height: 40px;
+    border-radius: 15px;
+    padding: 3px 13px;
+  
+    border: 1px solid #ebebeb;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 93%;
+    background: transparent;  
+    margin-bottom: 1.5rem!important;
+
+}
+.passwordDiv>.passwordDiv1{
+    height: 40px;
+    border-radius: 15px;
+    padding: 3px 13px;
+   
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    background: transparent;  
+}
+.passwordDiv>.passwordDiv2{
+    height: 40px;
+    border-radius: 15px;
+    padding: 3px 13px;
+   
+    border: 1px solid #ebebeb;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    background: transparent;  
+}
+.passwordDiv>div>svg{
+    width: 50px;
+    height: 50px;
+    stroke: #E33B41; 
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1px;
+    fill: none;
+}
+.emailDiv>div{
+    height: 40px;
+    border-radius: 15px;
+    padding: 3px 13px;
+   
+    border: 1px solid #ebebeb;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    background: transparent;
+}
+.eDiv{
+    height: 40px;
+    border-radius: 15px;
+    padding: 3px 13px;
+   
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    background: transparent;
+}
+
+.emailDiv>div>svg{
+    width: 23px;
+    height: 25px;
+    stroke: #E33B41; 
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1px;
+    fill: none;
+    margin-right: 0.5rem;
+}
+.passwordDiv>div>input{
+    background: none;
+    border: none;
+    width: 84%;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    outline: none; 
+}
+.emailDiv>div>input{
+    background: none;
+    border: none;
+    width: 84%;
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+    outline: none;
+}
+.forgotDiv{
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.forgotDiv>span{
+    color: #E33B41;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: right;
+}
+.orDiv{
+    margin-bottom: 1.5rem!important;
+    margin-top: 36px;
+  
+}
+
+.orDiv>div{
+    margin-bottom: 1.5rem!important;
+    border-top: 2px solid #ebebeb;
+    display: flex;
+    justify-content: center;
+}
+.orDiv>div>span{
+    background: #fff;
+    padding: 0 15px;
+    text-align: center;
+    color: #515151;
+    position: relative;
+    bottom: 10px; 
+}
+.aDiv{
+    margin-bottom: 1.5rem!important;
+   
+}
+.aDiv>button{
+    height: 40px;
+    border-radius: 15px;
+    padding: 3px 13px;
+   cursor: pointer;
+    border: 1px solid #ebebeb;
+    text-transform: uppercase;
+    align-items: center;
+ 
+    width: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between!important;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    align-items: center!important;
+
+}
+
+.spanDiv{
+    width: 30px ;
+    height: 30px ;
+    border-radius: 100%;
+    background: #E33B41;
+display: flex;
+align-items: center;
+
+    margin-right: 1rem!important;
+}
+.aDiv>button>div>svg{
+    width: 25px;
+    height: 25px;
+    fill: #E33B41;
+    stroke: #E33B41; 
+  
+}
+.aDiv>button> div>span>i{
+    color: #fff;
+   font-size: 20px;
+ margin: 0 auto;
+}
+.aDiv1{
+    margin: 0!important;
+    font-size: calc(10px + .3vw);
+  
+}
+.aDiv1>button{
+    height: 40px;
+    text-transform: uppercase;
+    align-items: center!important;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 3px 13px;
+
+    border: 1px solid #ebebeb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between!important;
+    width: 100%;
+    background: transparent;
+}
+.aDiv1>button>div{
+    display: flex!important;
+    justify-content: space-between!important;
+    cursor: pointer;
+    align-items: center !important;
+}
+.aDiv1>button>div>svg{
+    stroke: #E33B41;
+    width: 25px;
+    height: 25px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2px;
+    margin-right: 1rem!important;
+    fill: none;
+}
+.logReg{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    line-height: 10vw;
+    font-size: calc(14px + .3vw);
+}
+.logReg>div{
+    width: 30vw;
+    font-size: calc(16px + .3vw);
+    font-weight: 600;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #ebebeb;
+    transition: all .3s;
+    text-align: center;
+    line-height: 10vw;
+}
+.active1{
+    width: 50%;
+    color: gray;
+    
+  }
+  
+  .active{
+    width: 50%;
+    color:red;
+    
+  }
+  .img1{
+    width: 14px;
+    height: 14px;
+  }
+  .openLoginDiv{
+    display: block;
+}
+
+.arrowDiv1{
+    display: none;
+}
+.arrowDiv{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    display: flex;
+    z-index: 6;
+    height: 35px;
+    padding: 10px 15px;
+    font-size: calc(16px + .3vw);
+    font-weight: 600;
+    box-shadow: 1px 0 5px 1px hsl(0deg 0% 54% / 40%);
+
+}
+.arrow{
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    border: 1px solid #ebebeb;
+    background-color: transparent;
+    
+}
+.arrow>img{
+    width: 14px;
+    height: 14px;
+   
+}
+.divNavlink{
+ 
+    border-bottom: 2px solid;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 768px){
+
+    .formContainer{
+    
+        width: 84vw;
+        padding: 3vw 1vw;
+    }
+    .formContainer>form{
+        width: 96vw;
+    }
+   
+   .passwordDiv>div>svg{
+    width: 25px;
+    height: 25px;
+   }
+   .arrowDiv1{
+    display: block;
+}
+}

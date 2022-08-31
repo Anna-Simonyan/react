@@ -1,0 +1,117 @@
+.sideBar{
+    width: 280px;
+    height: 100vh;
+    background: white;
+    position: fixed;
+   right: 0px;
+    transform: translateX(-60);
+  transition: .5s ease all;
+  bottom: 0px;
+  z-index: 2222;
+ 
+}
+.open{
+    width: 280px;
+    height: 100vh;
+    
+ transform: translateX(130px); 
+    transition: .5s ease all;
+  position: fixed;
+    z-index: 2222;
+}
+.close{
+    border: 1px solid #ebebeb;
+    margin-top: 30px;
+    margin-left: 70%;
+}
+.close>img{
+    width: 19px;
+    height: 19px;
+    border-radius: 12px;
+    display: flex;
+  
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.sideBar>nav{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.but{
+   
+    border: none;
+    border: none;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+   
+}
+@media only screen and (max-width: 768px){
+
+  .but {
+    height: 40px;
+    width: 40px;
+    margin-left: 0.5rem!important;
+        border-radius: 12px;
+
+}
+.but>img{
+  opacity: 0.4;
+}
+}
+.but>img{
+ width: 20px;
+ height: 20px;
+ opacity: 0.5;
+
+ 
+}
+.but>i:hover{
+color: rgb(150, 104, 236);
+}
+.dashImg{
+    margin-top: 30px;
+    margin-left: 130px;
+   
+   
+}
+
+
+.dashImg>i{
+  width: 36px;
+  height: 36px;
+color: white;
+}
+
+.active1>svg{
+  color: #DADADA;
+}
+
+.active>svg{
+  color: white;
+ 
+}
+.nav{
+    margin-left: 8%;
+    display: flex;
+   
+ 
+}
+.nav>div>img{
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    position: relative;
+    top: 8px;
+ 
+}
+.nav>div>a{
+    margin-left: 6px;
+    color: #DADADA;
+   
+}
